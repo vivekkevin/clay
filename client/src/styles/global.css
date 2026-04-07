@@ -1,0 +1,90 @@
+:root {
+  --bg: #050709;
+  --surface: #0b0f14;
+  --surface2: #111820;
+  --surface3: #182030;
+  --border: #1e2d3d;
+  --border2: #253545;
+  --green: #00ff88;
+  --green-dim: #00cc6a;
+  --green-glow: rgba(0, 255, 136, 0.12);
+  --blue: #00aaff;
+  --blue-dim: #0088cc;
+  --orange: #ffaa00;
+  --red: #ff4455;
+  --purple: #9966ff;
+  --text: #e8f4ff;
+  --text2: #8bb0cc;
+  --text3: #4a6a84;
+  --mono: 'Space Mono', monospace;
+  --sans: 'Syne', sans-serif;
+  --code: 'DM Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 13px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text3); }
+
+.mapboxgl-popup-content {
+  background: var(--surface2) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  font-family: var(--mono) !important;
+  font-size: 11px !important;
+  padding: 8px 12px !important;
+}
+
+.mapboxgl-popup-tip { border-top-color: var(--border) !important; }
+
+.mapboxgl-ctrl-group {
+  background: var(--surface2) !important;
+  border: 1px solid var(--border) !important;
+}
+.mapboxgl-ctrl-group button {
+  background: var(--surface2) !important;
+  border-bottom-color: var(--border) !important;
+}
+.mapboxgl-ctrl-group button:hover { background: var(--surface3) !important; }
+
+/* Animations */
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 var(--green-glow); }
+  50% { box-shadow: 0 0 0 8px transparent; }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

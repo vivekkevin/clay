@@ -1,0 +1,11 @@
+@"
+checkpoints/
+*.ckpt
+*.pt
+clay_env/
+node_modules/
+__pycache__/
+*.pyc
+*.log
+.env
+"@ | Out-File -Encoding utf8 .gitignore

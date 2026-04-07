@@ -1,0 +1,167 @@
+# Clay Foundation Model — Band Metadata
+# Source: https://github.com/Clay-foundation/model/blob/main/configs/metadata.yaml
+# Each platform entry defines band names, wavelengths, GSD, mean and std
+# for normalisation (computed from the Clay training dataset).
+
+sentinel-2-l2a:
+  gsd: 10
+  bands:
+    wavelength:
+      B02: 0.493
+      B03: 0.560
+      B04: 0.665
+      B05: 0.704
+      B06: 0.740
+      B07: 0.783
+      B08: 0.842
+      B8A: 0.865
+      B11: 1.610
+      B12: 2.190
+    mean:
+      B02: 1369.03
+      B03: 1597.68
+      B04: 1741.10
+      B05: 1850.00
+      B06: 2200.00
+      B07: 2340.00
+      B08: 2415.00
+      B8A: 2545.00
+      B11: 1810.00
+      B12: 1200.00
+    std:
+      B02: 2026.96
+      B03: 2011.88
+      B04: 2146.35
+      B05: 2148.00
+      B06: 2227.00
+      B07: 2301.00
+      B08: 2340.00
+      B8A: 2418.00
+      B11: 1994.00
+      B12: 1618.00
+
+sentinel-1-rtc:
+  gsd: 10
+  bands:
+    wavelength:
+      VV: 5.6
+      VH: 5.6
+    mean:
+      VV: -12.619
+      VH: -19.895
+    std:
+      VV: 5.115
+      VH: 5.464
+
+landsat-c2l2-sr:
+  gsd: 30
+  bands:
+    wavelength:
+      blue:   0.482
+      green:  0.562
+      red:    0.655
+      nir08:  0.865
+      swir16: 1.609
+      swir22: 2.201
+    mean:
+      blue:   9880.00
+      green:  10244.00
+      red:    10025.00
+      nir08:  14013.00
+      swir16: 11766.00
+      swir22: 9025.00
+    std:
+      blue:   4025.00
+      green:  3841.00
+      red:    4121.00
+      nir08:  4867.00
+      swir16: 4579.00
+      swir22: 3840.00
+
+landsat-c2l1:
+  gsd: 30
+  bands:
+    wavelength:
+      blue:   0.482
+      green:  0.562
+      red:    0.655
+      nir08:  0.865
+      swir16: 1.609
+      swir22: 2.201
+    mean:
+      blue:   9880.00
+      green:  10244.00
+      red:    10025.00
+      nir08:  14013.00
+      swir16: 11766.00
+      swir22: 9025.00
+    std:
+      blue:   4025.00
+      green:  3841.00
+      red:    4121.00
+      nir08:  4867.00
+      swir16: 4579.00
+      swir22: 3840.00
+
+naip:
+  gsd: 1
+  bands:
+    wavelength:
+      red:   0.635
+      green: 0.560
+      blue:  0.478
+      nir:   0.850
+    mean:
+      red:   109.39
+      green: 114.20
+      blue:  103.85
+      nir:   143.94
+    std:
+      red:   55.28
+      green: 52.18
+      blue:  46.06
+      nir:   57.57
+
+linz:
+  gsd: 0.5
+  bands:
+    wavelength:
+      red:   0.635
+      green: 0.560
+      blue:  0.478
+    mean:
+      red:   110.0
+      green: 115.0
+      blue:  105.0
+    std:
+      red:   50.0
+      green: 48.0
+      blue:  44.0
+
+modis:
+  gsd: 500
+  bands:
+    wavelength:
+      B01: 0.645
+      B02: 0.859
+      B03: 0.469
+      B04: 0.555
+      B05: 1.240
+      B06: 1.640
+      B07: 2.130
+    mean:
+      B01: 1200.0
+      B02: 2800.0
+      B03: 900.0
+      B04: 1100.0
+      B05: 2200.0
+      B06: 1800.0
+      B07: 1100.0
+    std:
+      B01: 800.0
+      B02: 1400.0
+      B03: 600.0
+      B04: 700.0
+      B05: 1000.0
+      B06: 900.0
+      B07: 700.0
