@@ -1,4 +1,4 @@
-https://we.tl/t-7EChuSLMHWp0AcQ1
+[https://we.tl/t-7EChuSLMHWp0AcQ1](https://drive.google.com/drive/folders/1Wp1C2_CUNAMwUvLLx7_webAqPbbfPfor?usp=sharing)
 # Clay Foundation Model — Web Platform
 
 A fully functional web application for the Clay satellite foundation model, with an interactive Mapbox satellite map, real-time analysis pipeline, and rich result visualizations.
